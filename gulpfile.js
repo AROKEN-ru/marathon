@@ -36,7 +36,8 @@ const paths = {
   buildJsFolder: `${buildFolder}/js`,
   srcImgFolder: `${srcFolder}/assets/img`,
   buildImgFolder: `${buildFolder}/img`,
-  fontsFolder: `${srcFolder}/assets/fonts`
+  srcFontsFolder: `${srcFolder}/assets/fonts/**`,
+  buildFontsFolder: `${buildFolder}/fonts`
 }
 
 const htmlInclude = () => {
@@ -147,8 +148,8 @@ const avifImages = () => {
 }
 
 const fonts = () => {
-  return src(`${paths.fonts}/**`)
-    .pipe(dest(buildFolder))
+  return src(`${paths.srcFontsFolder}/**`)
+    .pipe(dest(paths.buildFontsFolder))
 }
 
 const clean = () => {
@@ -166,7 +167,7 @@ const watchFiles = () => {
   watch(paths.srcFullJs, scripts)
   watch(`${paths.srcPartialsFolder}/**/**.html`, htmlInclude)
   watch(`${srcFolder}/*.html`, htmlInclude)
-  watch(`${paths.fonts}/**`, fonts)
+  watch(`${paths.srcFontsFolder}/*`, fonts)
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`, images)
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, webpImages)
   watch(`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`, avifImages)

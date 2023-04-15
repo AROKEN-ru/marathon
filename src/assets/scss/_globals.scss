@@ -1,8 +1,28 @@
 html {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(100vw / 1920 * 10);
   box-sizing: border-box;
   height: 100%;
+
+  @include small-desktop {
+    font-size: calc(100vw / 1024 * 10);
+  }
+
+  @include tablet {
+    font-size: calc(100vw / 768 * 10);
+  }
+
+  @include small-tablet {
+    font-size: calc(100vw / 576 * 10);
+  }
+
+  @include mobile {
+    font-size: calc(100vw / 420 * 10);
+  }
+
+  @include small-mobile {
+    font-size: calc(100vw / 320 * 10);
+  }
 }
 
 *,

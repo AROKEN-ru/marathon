@@ -1,0 +1,9 @@
+.burger {
+  @include burger;
+  display: none;
+  z-index: 3;
+
+  @include small-tablet {
+    display: block;
+  }
+}

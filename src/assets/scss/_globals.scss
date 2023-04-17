@@ -5,23 +5,23 @@ html {
   height: 100%;
 
   @include small-desktop {
-    font-size: calc(100vw / 1024 * 10);
+    font-size: calc(100vw / 1024 * 8);
   }
 
   @include tablet {
-    font-size: calc(100vw / 768 * 10);
+    font-size: calc(100vw / 768 * 8);
   }
 
   @include small-tablet {
-    font-size: calc(100vw / 576 * 10);
+    font-size: calc(100vw / 576 * 8);
   }
 
   @include mobile {
-    font-size: calc(100vw / 420 * 10);
+    font-size: calc(100vw / 420 * 8);
   }
 
   @include small-mobile {
-    font-size: calc(100vw / 320 * 10);
+    font-size: calc(100vw / 320 * 8);
   }
 }
 
@@ -35,6 +35,7 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
+  background-color: var(--bg-color);
 }
 
 img {

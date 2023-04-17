@@ -1,9 +1,11 @@
 @mixin burger {
-  --burger-width: 30px;
-  --burger-height: 20px;
-  --burger-line-height: 2px;
+  --burger-width: 3rem;
+  --burger-height: 2rem;
+  --burger-line-height: .2rem;
 
-  position: relative;
+  position: fixed;
+  top: 2rem;
+  right: 2.5rem;
   border: none;
   color: var(--light-color);
   width: var(--burger-width);

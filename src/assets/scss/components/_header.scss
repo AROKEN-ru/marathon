@@ -1,0 +1,42 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 1.5rem;
+
+  &__logo {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--light-color);
+  }
+
+  &__container {
+    @include flex-align-center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__menu {
+    @include flex-align-center;
+    width: 100%;
+
+    @include small-tablet {
+      position: fixed;
+      inset: 0;
+      z-index: 2;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4rem;
+      background-color: var(--bg-color);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity .3s, visibility .3s
+    }
+
+    &--active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

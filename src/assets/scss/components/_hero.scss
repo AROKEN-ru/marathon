@@ -1,0 +1,127 @@
+.hero {
+  padding-top: 13.7rem;
+  padding-bottom: 5rem;
+  background-color: var(--bg-color);
+
+  @include mobile {
+    padding-top: 10rem;
+  }
+
+  @include small-mobile {
+    padding-bottom: 3rem;
+  }
+
+  &__top {
+    @include flex-column;
+    align-items: center;
+    color: var(--light-color);
+    text-align: center;
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 150%;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    max-width: 90rem;
+
+    @include small-tablet {
+      font-size: 4.6rem;
+      line-height: 130%;
+    }
+
+    @include mobile {
+      font-size: 4rem;
+      line-height: 110%;
+    }
+
+    @include small-mobile {
+      font-size: 3rem;
+    }
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 200%;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    max-width: 68.9rem;
+
+    @include small-tablet {
+      font-size: 1.4rem;
+      line-height: 150%;
+    }
+  }
+
+  &__btns {
+    @include flex-align-center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+
+    @include mobile {
+      gap: 1.5rem;
+    }
+  }
+
+  &__btn-empty {
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: var(--light-color);
+    border: 1px solid var(--light-color);
+    border-radius: 2.8rem;
+    text-transform: capitalize;
+    padding: 1.2rem 2.9rem 1.3rem;
+  }
+
+  &__btn,
+  &__btn-empty {
+    @include mobile {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__bottom {
+    position: relative;
+    @include flex-justify-center;
+  }
+
+  &__img {
+    width: 110rem;
+    border-radius: 1rem;
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8.3rem;
+    height: 8.3rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+
+    @include mobile {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+
+  &__play-icon {
+    width: 5.3rem;
+
+    @include mobile {
+      width: 4.3rem;
+    }
+  }
+}

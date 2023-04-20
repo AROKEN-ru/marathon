@@ -35,7 +35,10 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  background-color: var(--bg-color);
+
+  &--fixed {
+    overflow: hidden;
+  }
 }
 
 img {
@@ -82,4 +85,10 @@ input {
   max-width:  calc(var(--container-width) + (var(--container-padding) * 2));
   padding: 0 var(--container-padding);
   margin: 0 auto;
+}
+
+.hidden {
+  font-size: 0;
+  opacity: 0;
+  visibility: hidden;
 }

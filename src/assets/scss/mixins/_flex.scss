@@ -9,9 +9,19 @@
   justify-content: center;
 }
 
+@mixin flex-justify-center {
+  display: flex;
+  justify-content: center;
+}
 
 @mixin flex-all-sb {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+

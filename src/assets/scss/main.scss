@@ -5,9 +5,12 @@
 
 // global components
 @import "./components/globals/button";
+@import "./components/globals/section";
+@import "./components/globals/text";
 
 // components
 @import "./components/header";
 @import "./components/nav";
 @import "./components/burger";
 @import "./components/hero";
+@import "./components/programs";

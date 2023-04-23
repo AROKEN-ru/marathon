@@ -1,8 +1,10 @@
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   padding: 1.2rem 1.5rem;
+  background-color: var(--bg-color);
+  z-index: 3;
 
   &__logo {
     font-weight: 800;

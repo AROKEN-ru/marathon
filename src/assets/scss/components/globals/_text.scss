@@ -1,0 +1,24 @@
+.text {
+  &-small {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: var(--black1-color);
+  }
+
+  &-large {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 150%;
+    color: var(--black2-color);
+
+    @include mobile {
+      font-size: 3.4rem;
+    }
+
+    @include small-mobile {
+      font-size: 3rem;
+      line-height: 120%;
+    }
+  }
+}

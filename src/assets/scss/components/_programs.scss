@@ -1,0 +1,125 @@
+.programs {
+  &__container {
+    @include flex-align-center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  &__top {
+    text-align: center;
+    max-width: 59rem;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  &__slider-wrapper {
+    position: relative;
+    @include flex-align-center;
+    max-width: 105rem;
+    margin-right: -3rem;
+
+    @include tablet {
+      max-width: 70rem;
+      margin-right: -2rem;
+    }
+
+    @include small-tablet {
+      max-width: 60rem;
+    }
+
+    @include mobile {
+      max-width: 34rem;
+    }
+
+    @include small-mobile {
+      max-width: 30rem;
+    }
+  }
+
+  &__slide {
+    max-width: 35rem;
+
+    &-inner {
+      padding-right: 3rem;
+
+      @include tablet {
+        padding-right: 2rem;
+      }
+    }
+
+    &-img {
+      width: 35rem;
+      border-radius: 1rem;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 3rem;
+      line-height: 4.5rem;
+      color: var(--black2-color);
+
+      @include mobile {
+        font-size: 2.8rem;
+      }
+    }
+
+    &-author {
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: var(--black2-color);
+      margin-bottom: 1rem;
+    }
+
+    &-descr {
+      font-weight: 300;
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      color: var(--grey-color);
+      margin-bottom: 2rem;
+    }
+
+    &-link {
+      @include flex-align-center;
+      gap: 1rem;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 143%;
+      color: var(--blue-color);
+    }
+
+    &-arrow {
+      width: 2rem;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    background: url("../img/slider-arrow-icon.svg");
+    width: 4.5rem;
+    height: 4.5rem;
+
+    &-prev {
+      left: -8rem;
+
+      @include small-mobile {
+        left: -6rem;
+      }
+    }
+
+    &-next {
+      transform: rotate(-180deg);
+      right: -6rem;
+
+      @include small-mobile {
+        right: -4rem;
+      }
+    }
+  }
+}

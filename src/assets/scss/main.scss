@@ -1,12 +1,10 @@
-@import "vars";
 @import "mixins";
+@import "vars";
 @import "fonts";
 @import "globals";
 
 // global components
-@import "./components/globals/button";
-@import "./components/globals/section";
-@import "./components/globals/text";
+@import "./components/globals/globals";
 
 // components
 @import "./components/header";
@@ -14,3 +12,4 @@
 @import "./components/burger";
 @import "./components/hero";
 @import "./components/programs";
+@import "./components/nutritions";

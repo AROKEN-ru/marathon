@@ -1,7 +1,3 @@
 .section {
-  padding: 10rem 0;
-
-  @include mobile {
-    padding: 5rem 0;
-  }
+  padding: var(--section-offset) 0;
 }

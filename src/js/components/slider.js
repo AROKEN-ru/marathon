@@ -8,10 +8,10 @@ const programs = new Swiper('.programs__slider', {
     prevEl: '.programs__btn-prev',
   },
   breakpoints: {
-    1024: {
+    1025: {
       slidesPerView: 3,
     },
-    576: {
+    577: {
       slidesPerView: 2,
     }
   }

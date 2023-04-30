@@ -1,0 +1,7 @@
+:root {
+  --section-offset: 10rem;
+
+  @include mobile {
+    --section-offset: 5rem;
+  }
+}

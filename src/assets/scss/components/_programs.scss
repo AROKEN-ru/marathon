@@ -21,7 +21,7 @@
   &__slider-wrapper {
     position: relative;
     @include flex-align-center;
-    max-width: 105rem;
+    max-width: 104.8rem;
     margin-right: -3rem;
 
     @include tablet {
@@ -101,7 +101,7 @@
 
   &__btn {
     position: absolute;
-    background: url("../img/slider-arrow-icon.svg");
+    background: url("../img/slider-arrow-icon.svg") no-repeat center / cover;
     width: 4.5rem;
     height: 4.5rem;
 

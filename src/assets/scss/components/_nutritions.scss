@@ -1,0 +1,99 @@
+.nutritions {
+  &__left {
+    position: relative;
+  }
+
+  &__container {
+    @include flex-all-sb;
+
+    @include tablet {
+      flex-direction: column-reverse;
+      gap: 4rem;
+    }
+
+    @include small-mobile {
+      gap: 2rem;
+    }
+  }
+
+  &__card {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--light-color);
+    filter: drop-shadow(0 .8rem 2.4rem rgba(0, 0, 0, 0.15));
+    border-radius: 1rem;
+
+    @include small-mobile {
+      font-size: 1.5rem;
+    }
+
+    &--blue {
+      top: 0;
+      left: 0;
+      background-color: var(--bg-color);
+      padding: 1.5rem 3.7rem;
+    }
+
+    &--black {
+      bottom: .3rem;
+      right: -3rem;
+      background-color: var(--black1-color);
+      padding: 1.5rem;
+
+      @include mobile {
+        right: 0;
+      }
+    }
+  }
+
+  &__icon {
+    width: 3rem;
+  }
+
+  &__img {
+    width: 57.2rem;
+  }
+
+  &__right {
+    max-width: 44.5rem;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__texts {
+    @include flex-column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+
+    @include mobile {
+      gap: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: var(--black2-color);
+
+    @include small-mobile {
+      font-size: 1.4rem;
+      line-height: 150%;
+    }
+  }
+}

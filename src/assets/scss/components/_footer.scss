@@ -1,0 +1,105 @@
+.footer {
+  border-top: .1rem solid var(--grey2-color);
+  padding-top: 4.8rem;
+  padding-bottom: 2rem;
+
+  &__top {
+    @include flex-align-center;
+    gap: 2.4rem;
+    padding-bottom: 4.2rem;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    max-width: 44.5rem;
+
+    @include small-tablet {
+      @include flex-column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: var(--bg-color);
+    margin-bottom: .5rem;
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 200%;
+    text-transform: capitalize;
+    color: var(--black2-color);
+    margin-bottom: 1rem;
+  }
+
+  &__social {
+    @include flex-align-center;
+    gap: 1rem;
+  }
+
+  &__right {
+    @include flex-all-sb;
+    gap: 1rem;
+    width: 100%;
+
+    @include small-tablet {
+      justify-content: center;
+      gap: 8rem;
+    }
+
+    @include mobile {
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    @include small-mobile {
+      justify-content: flex-start;
+      gap: 2rem 8rem;
+    }
+  }
+
+  &__list-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: var(--bg-color);
+    margin-bottom: 2rem;
+
+    @include small-mobile {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__list {
+    @include flex-column;
+    gap: 1rem;
+  }
+
+  &__link {
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: var(--black2-color);
+
+    @include small-mobile {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__bottom {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.6rem;
+    color: var(--black2-color);
+    text-align: center;
+  }
+}

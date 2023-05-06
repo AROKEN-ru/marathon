@@ -1,0 +1,99 @@
+.join {
+  @include mobile {
+    background-color: var(--bg-color);
+  }
+
+  &__inner {
+    @include flex-all-sb;
+    gap: 2rem;
+    background: var(--bg-color);
+    border-radius: 2rem;
+    padding: 5rem;
+
+    @include small-tablet {
+      justify-content: center;
+      text-align: center;
+    }
+
+    @include mobile {
+      padding: 0 3rem;
+    }
+
+    @include mobile {
+      padding: 0 2rem;
+    }
+  }
+
+  &__left {
+    max-width: 57.1rem;
+  }
+
+  &__descr {
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 135%;
+    text-transform: capitalize;
+    color: var(--light-color);
+    margin-bottom: 3rem;
+
+    @include mobile {
+      font-size: 3.3rem;
+    }
+
+    @include small-mobile {
+      font-size: 2.8rem;
+    }
+  }
+
+  &__form {
+    @include flex-align-center;
+    gap: 3rem;
+
+    @include small-tablet {
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    @include small-mobile {
+      gap: 1.5rem;
+    }
+  }
+
+  &__input {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    background: transparent;
+    border: .1rem solid var(--light-color);
+    border-radius: 3.4rem;
+    padding: 1.7rem 2.4rem;
+    min-width: 28.3rem;
+    min-height: 5rem;
+    color: var(--light-color);
+
+    &::placeholder {
+      font-weight: 400;
+      text-transform: capitalize;
+      color: var(--light-color);
+      opacity: 1;
+    }
+  }
+
+  &__input,
+  &__btn {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__img {
+    width: 28.6rem;
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+}

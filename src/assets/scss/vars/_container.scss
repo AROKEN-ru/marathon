@@ -1,4 +1,16 @@
 :root {
   --container-width: 111rem;
   --container-padding: 1.5rem;
+
+  @include tablet {
+    --container-width: 90rem;
+  }
+
+  @include small-tablet {
+    --container-width: 57.6rem;
+  }
+
+  @include mobile {
+    --container-width: 42rem;
+  }
 }

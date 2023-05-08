@@ -3,6 +3,7 @@ html {
   font-size: calc(100vw / 1920 * 10);
   box-sizing: border-box;
   height: 100%;
+  scroll-behavior: smooth;
 
   @include small-desktop {
     font-size: calc(100vw / 1024 * 8);

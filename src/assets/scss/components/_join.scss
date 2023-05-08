@@ -1,5 +1,5 @@
 .join {
-  @include mobile {
+  @include small-tablet {
     background-color: var(--bg-color);
   }
 
@@ -13,9 +13,6 @@
     @include small-tablet {
       justify-content: center;
       text-align: center;
-    }
-
-    @include mobile {
       padding: 0 3rem;
     }
 

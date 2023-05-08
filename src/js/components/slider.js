@@ -1,7 +1,7 @@
-import Swiper, {Navigation, Pagination} from 'swiper'
+import Swiper, {Navigation} from 'swiper'
 
 const programs = new Swiper('.programs__slider', {
-  modules: [Navigation, Pagination],
+  modules: [Navigation],
   slidesPerView: 1,
   navigation: {
     nextEl: '.programs__btn-next',
